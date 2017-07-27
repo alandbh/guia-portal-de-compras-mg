@@ -1,11 +1,9 @@
 {
   "name": "guiaportal",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "devDependencies": {
-    "css-loader": "^0.26.4",
-    "react-scripts": "0.9.4",
-    "style-loader": "^0.13.2"
+
   },
   "dependencies": {
     "css-loader": "^0.26.4",
