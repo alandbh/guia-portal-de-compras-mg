@@ -1,0 +1,419 @@
+@import 'https://raw.githubusercontent.com/daneden/animate.css/master/animate.css';
+
+
+body {
+  background: #f1f1f1;
+}
+
+/*
+  HELPERS
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.riscado {
+  text-decoration: line-through;
+}
+
+code {
+  padding: 20px;
+  background: #f1f1f1;
+  display: block;
+
+  pre {
+    margin: -20px 0;
+    overflow-x: auto;
+  }
+}
+
+pre.inline {
+  display: inline;
+}
+
+
+
+
+/*
+  Mensagens
+  -------------------------------
+*/
+$colorError: #c00;
+$colorSuccess: #3d9607;
+$colorAlert: orange;
+$colorInfo: #33bfe0;
+
+.msg {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 15px 0;
+  .icon {
+    width: 80px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      height: 42px !important;
+      width: 42px !important;
+      color: rgba(255,255,255,0.7) !important;
+    }
+  }
+  .content {
+    background: #f1f1f1;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    flex: 1;
+
+    p {
+      margin: 5px 0;
+    }
+    h4 {
+      margin: 20px 0 10px;
+      font-size: 18px;
+    }
+  }
+  &.msg-error {
+    .icon {
+      background: $colorError;
+    }
+    .content {
+      border: 1px solid $colorError;
+      border-right: 4px solid lighten($colorError, 5%);
+    }
+  }
+
+  &.msg-success {
+    .icon {
+      background: $colorSuccess;
+    }
+    .content {
+      border: 1px solid $colorSuccess;
+      border-right: 4px solid lighten($colorSuccess, 5%);
+    }
+  }
+
+  &.msg-alert {
+    .icon {
+      background: $colorAlert;
+    }
+    .content {
+      border: 1px solid $colorAlert;
+      border-right: 4px solid lighten($colorAlert, 5%);
+    }
+  }
+
+  &.msg-info {
+    .icon {
+      background: $colorInfo;
+    }
+    .content {
+      border: 1px solid $colorInfo;
+      border-right: 4px solid lighten($colorInfo, 5%);
+    }
+  }
+
+
+}
+
+
+
+/*
+  Tabelas
+  -------------------------------
+*/
+table {
+  border-collapse: collapse;
+  max-width: 780px;
+  border-bottom: 1px solid #ddd;
+  th {
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  td {
+    padding: 10px 15px;
+  }
+}
+
+
+blockquote {
+  margin: 3em 0 1em 5em;
+  background: #eee;
+  padding: 2em;
+  max-width: 780px;
+
+  h3, h2, h1, h4, h5 {
+    margin-top: 0;
+  }
+}
+
+q {
+  font-style: italic;
+}
+
+figure.responsive {
+
+  border: 1px solid #ddd;
+  border-bottom: none;
+  padding: 10px 10px 20px 10px;
+  position: relative;
+  display: inline-block;
+
+  &:after {
+    //background: url(http://www.material-ui.com/images/bottom-tear.svg);
+    background: url('images/bottom-tear.svg');
+    content: '';
+    display: block;
+        height: 10px;
+        bottom: 0px;
+        position: absolute;
+        border-left: 1px solid white;
+        border-right: 1px solid #fff;
+        width: 100%;
+        left: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 853px;
+  }
+}
+
+.App {
+  /*text-align: center;*/
+
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 56px;
+  padding: 10px 10px 10px 50px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*
+Helpers
+*/
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+}
+
+// body:before {
+//   content: '';
+//     height: 200px;
+//     width: 100%;
+//     background: #f44336;
+//     display: block;
+//     position: absolute;
+//     z-index: -1;
+// }
+
+#main-content {
+  transition: all 350ms cubic-bezier(0.66, 0.03, 0.58, 1) 0ms;
+  overflow-x: hidden;
+}
+.menu-open-false.App #main-content {
+  width: 100%;
+}
+
+.menu-open-true.App #main-content {
+  /*width: calc(100% - 300px);
+  margin-left: 300px;*/
+  padding-left: 260px;
+}
+.menu-open-true.App.is-mobile {
+  overflow-x: hidden;
+}
+.menu-open-true.App.is-mobile #main-content {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.logoPortal {
+  width: 60%;
+  opacity: 0.9;
+  margin: 20px 18px 0;
+}
+
+
+/*
+  main-navigator-container
+*/
+.animated {
+  animation-duration: 0.45s;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+
+
+  margin-left: 17px;
+
+}
+
+.animated .animated {
+  border-left: 3px solid #e0584e;
+}
+
+.animated > div {
+  margin-left: -7px;
+}
+
+.animatedContainer {
+  > hr {
+    transform: scaleX(0);
+    display: none;
+  }
+
+  .animatedContainer {
+    .linhaPai {
+      display: block;
+      border-top: none rgb(244, 67, 54);
+        border-left: none rgb(244, 67, 54);
+        border-right: none rgb(244, 67, 54);
+        border-bottom: 2px solid rgb(244, 67, 54);
+        box-sizing: content-box;
+        margin: 0px;
+        width: calc(100% - 22px);
+        transform: scaleX(0);
+        height: 1px;
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 30ms;
+        margin-left: 17px;
+        margin-top: -2px;
+        margin-bottom: 10px;
+
+        &.aberto {
+          transform: scaleX(1);
+        }
+    }
+  }
+}
+
+
+
+
+div.animated.slideInDown > div > div > div > div.animated.slideInDown > div > span {
+  margin-left: 5px !important;
+}
+
+div.animated > div > div > div > div.animated > div > span.ativado {
+  background: #e0584e !important;
+  color: #fff !important;
+}
+
+article {
+  padding-left: 2em;
+  line-height: 1.4;
+
+  h2 {
+    padding-bottom: .3em;
+    font-size: 1.5em;
+    line-height: 1.334;
+    border-bottom: 1px solid #eee;
+    font-weight: 400;
+    margin-top: 3em;
+    }
+
+    a {
+      margin: 5px;
+    }
+}
+
+
+.menu_lateral {
+  > div {
+    span {
+      > div {
+        > div {
+          padding: 0 !important;
+
+          a {
+            padding: 16px;
+            padding-left: 31px !important;
+            display: block;
+            text-decoration: none;
+            color: #777;
+
+            &.active {
+              color: #c00;
+              background: #f1f1f1;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div {
+    a {
+      &.active {
+        > div {
+          background: #f1f1f1;
+        }
+
+        div {
+          color: #c00;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.pallete {
+  .theme-palette-color-inner {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    float: left;
+    padding: 7px;
+
+    span {
+      font-size: 12px;
+    }
+
+    strong {
+      display: block;
+      position: absolute;
+      bottom: 5px;
+    }
+
+    &.white {
+      span, strong {
+        color: #fff;
+      }
+    }
+  }
+}
