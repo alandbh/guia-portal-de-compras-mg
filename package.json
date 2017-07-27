@@ -2,7 +2,7 @@
   "name": "guiaportal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://homepages.dcc.ufmg.br/~aalves/guiaportal",
+  "homepage": "https://guiaportal.herokuapp.com/",
   "devDependencies": {
     "css-loader": "^0.26.4",
     "react-scripts": "0.9.4",
