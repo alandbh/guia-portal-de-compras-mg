@@ -6,14 +6,7 @@ You can see this guide running [here](http://styleguide.alanvasconcelos.com/).
 
 The new Portal will be launched in 2018 with totally new front-end code using React and Material UI.
 
-## Yes, we've used all the magic of [Create React App](https://github.com/facebookincubator/create-react-app)
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
-
-## Guidelines
+## Guidelines covered
 
 ### Design
 - [Application anatomy](http://styleguide.alanvasconcelos.com/anatomia)
@@ -27,6 +20,14 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - [Removing from a list](http://styleguide.alanvasconcelos.com/remocao)
 - [Deleting an object from the app](http://styleguide.alanvasconcelos.com/exclusao)
 - [Messages](http://styleguide.alanvasconcelos.com/mensagens)
+
+
+## Yes, we've used all the magic of [Create React App](https://github.com/facebookincubator/create-react-app)
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+Below you will find some information on how to perform common tasks.<br>
+You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 
 ## Table of Contents
