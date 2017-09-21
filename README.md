@@ -1,7 +1,33 @@
+## Style Guide for Government Procurement Portal
+
+This is a style guide built in React and [Material UI Framework](http://www.material-ui.com/#/) for Procurement Portal of Minas Gerais Government.
+
+You can see this guide running [here](http://styleguide.alanvasconcelos.com/).
+
+The new Portal will be launched in 2018 with totally new front-end code using React and Material UI.
+
+## Yes, we've used all the magic of [Create React App](https://github.com/facebookincubator/create-react-app)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+## Guidelines
+
+### Design
+- [Application anatomy](http://styleguide.alanvasconcelos.com/anatomia)
+- [Colors](http://styleguide.alanvasconcelos.com/cores)
+### Components
+- [Cards](http://styleguide.alanvasconcelos.com/card)
+- [Grid](http://styleguide.alanvasconcelos.com/grid)
+- [Lists](http://styleguide.alanvasconcelos.com/lista)
+- [Tables](http://styleguide.alanvasconcelos.com/tabela)
+### Behavior
+- [Removing from a list](http://styleguide.alanvasconcelos.com/remocao)
+- [Deleting an object from the app](http://styleguide.alanvasconcelos.com/exclusao)
+- [Messages](http://styleguide.alanvasconcelos.com/mensagens)
+
 
 ## Table of Contents
 
