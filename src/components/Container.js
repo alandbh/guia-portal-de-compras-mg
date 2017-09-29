@@ -10,7 +10,7 @@ import {
 
 
 // importando os componentes
-import Paper                        from 'material-ui/Paper';
+import Paper  from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
 
 
